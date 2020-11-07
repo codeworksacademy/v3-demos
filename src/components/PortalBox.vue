@@ -10,10 +10,21 @@
 </template>
 
 <script>
+import { reactive } from 'vue'
 export default {
   props: {
     box: { type: Object, required: true },
     teams: { type: Array, default: () => [] }
+  },
+  setup() {
+    const state = reactive({
+      person: {},
+      people: [{}]
+    })
+
+    return {
+      state
+    }
   },
   methods: {
     changeTeam() {

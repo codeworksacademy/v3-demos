@@ -33,6 +33,6 @@ onBeforeRouteLeave(() => {
 
 export const state = reactive({
   boxes: computed(() => boxes.value),
-  teams: ['red-team', 'blue-team', 'green-team', 'purple-team']
+  teams: ['red-team', 'blue-team', 'green-team', 'purple-team', '']
 })
 </script>
